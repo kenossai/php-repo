@@ -9,7 +9,6 @@ $heading = "Notes";
 $id = $_GET['id'];
 
 
-
 $notes = $db->query('select * from notes where id = :id',['id' => $id])->fetchAll();
 
 
